@@ -1,0 +1,153 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: qrw wqerw, x, LIC=21EWF-64FSD-Y7XRW-QVZWQ-RR77F-SMXIR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\nexse\Desktop\Keil 1105 USB_TEST\MDK-ARM\USB_TEST.uvprojx
+Project File Date:  11/09/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'USB_TEST'
+assembling startup_stm32f042x6.s...
+compiling stm32f0xx_hal_msp.c...
+compiling stm32f0xx_it.c...
+compiling usb_device.c...
+compiling usbd_cdc_if.c...
+compiling usbd_desc.c...
+../Core/Src/main.c(68): warning: implicit declaration of function 'CDC_Transmit_FS' is invalid in C99 [-Wimplicit-function-declaration]
+        CDC_Transmit_FS((uint8_t*) ptr, len);
+        ^
+../Core/Src/main.c(116): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+        HAL_GPIO_WritePin(SEL_GPIO_Port, SEL_Pin, SET);
+        ~~~~~~~~~~~~~~~~~                         ^~~
+../Core/Src/main.c(117): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+        HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, SET);
+        ~~~~~~~~~~~~~~~~~                                       ^~~
+../Core/Src/main.c(118): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+        HAL_GPIO_WritePin(VBUS_LED_GPIO_Port, VBUS_LED_Pin, SET);
+        ~~~~~~~~~~~~~~~~~                                   ^~~
+../Core/Src/main.c(119): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+        HAL_GPIO_WritePin(VBUS_EN20_GPIO_Port, VBUS_EN20_Pin, SET);
+        ~~~~~~~~~~~~~~~~~                                     ^~~
+../Core/Src/main.c(120): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+        HAL_GPIO_WritePin(VBUS_EN30_GPIO_Port, VBUS_EN30_Pin, RESET);
+        ~~~~~~~~~~~~~~~~~                                     ^~~~~
+../Core/Src/main.c(129): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(SEL_GPIO_Port, SEL_Pin, SET);
+                        ~~~~~~~~~~~~~~~~~                         ^~~
+../Core/Src/main.c(130): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, SET);
+                        ~~~~~~~~~~~~~~~~~                                       ^~~
+../Core/Src/main.c(131): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(VBUS_LED_GPIO_Port, VBUS_LED_Pin, SET);
+                        ~~~~~~~~~~~~~~~~~                                   ^~~
+../Core/Src/main.c(132): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(VBUS_EN20_GPIO_Port, VBUS_EN20_Pin, SET);
+                        ~~~~~~~~~~~~~~~~~                                     ^~~
+../Core/Src/main.c(134): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(VBUS_EN30_GPIO_Port, VBUS_EN30_Pin, RESET);
+                        ~~~~~~~~~~~~~~~~~                                     ^~~~~
+../Core/Src/main.c(138): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(SEL_GPIO_Port, SEL_Pin, RESET);
+                        ~~~~~~~~~~~~~~~~~                         ^~~~~
+../Core/Src/main.c(139): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, RESET);
+                        ~~~~~~~~~~~~~~~~~                                       ^~~~~
+../Core/Src/main.c(140): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(VBUS_LED_GPIO_Port, VBUS_LED_Pin, RESET);
+                        ~~~~~~~~~~~~~~~~~                                   ^~~~~
+../Core/Src/main.c(142): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                        HAL_GPIO_WritePin(VBUS_EN20_GPIO_Port, VBUS_EN20_Pin, SET);
+                        ~~~~~~~~~~~~~~~~~                                     ^~~
+../Core/Src/main.c(349): warning: implicit declaration of function 'CDC_Transmit_FS' is invalid in C99 [-Wimplicit-function-declaration]
+                CDC_Transmit_FS((uint8_t*) "USB2 Activated\r\n", 16);
+                ^
+../Core/Src/main.c(354): warning: implicit declaration of function 'CDC_Transmit_FS' is invalid in C99 [-Wimplicit-function-declaration]
+                CDC_Transmit_FS((uint8_t*) "USB3 Activated\r\n", 16);
+                ^
+../Core/Src/main.c(360): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                HAL_GPIO_WritePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin, RESET);
+                ~~~~~~~~~~~~~~~~~                                       ^~~~~
+../Core/Src/main.c(361): warning: implicit conversion from enumeration type 'FlagStatus' to different enumeration type 'GPIO_PinState' [-Wenum-conversion]
+                HAL_GPIO_WritePin(VBUS_LED_GPIO_Port, VBUS_LED_Pin, RESET);
+                ~~~~~~~~~~~~~~~~~                                   ^~~~~
+19 warnings generated.
+compiling main.c...
+compiling usbd_conf.c...
+compiling stm32f0xx_hal_pcd_ex.c...
+compiling stm32f0xx_ll_gpio.c...
+compiling stm32f0xx_ll_rcc.c...
+compiling stm32f0xx_ll_usb.c...
+compiling stm32f0xx_hal_pcd.c...
+compiling stm32f0xx_ll_exti.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_ll_utils.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_dma.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_tim.c...
+compiling stm32f0xx_hal_exti.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling stm32f0xx_hal_tim_ex.c...
+compiling system_stm32f0xx.c...
+compiling stm32f0xx_hal_can.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling usbd_ioreq.c...
+compiling usbd_core.c...
+compiling usbd_ctlreq.c...
+compiling usbd_cdc.c...
+linking...
+Program Size: Code=11164 RO-data=224 RW-data=380 ZI-data=3364  
+FromELF: creating hex file...
+"USB_TEST\USB_TEST.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_USB_TEST
+  C:\Users\nexse\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\nexse\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
