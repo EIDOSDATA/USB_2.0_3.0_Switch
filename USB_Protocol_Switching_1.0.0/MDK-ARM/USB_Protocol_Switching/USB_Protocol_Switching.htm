@@ -3,7 +3,7 @@
 <title>Static Call Graph - [USB_Protocol_Switching\USB_Protocol_Switching.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image USB_Protocol_Switching\USB_Protocol_Switching.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6150002: Last Updated: Tue Mar  2 16:07:45 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6150002: Last Updated: Tue Mar  2 16:20:20 2021
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -251,10 +251,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f042x6.o(RESET)
 </UL>
-<P><STRONG><a name="[87]"></a>Error_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, main.o(.text.Error_Handler))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_CAN_Init
+<P><STRONG><a name="[87]"></a>Error_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, main.o(.text.Error_Handler))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_Init
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_ResetCallback
 </UL>
@@ -674,12 +672,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[9c]"></a>MX_CAN_Init</STRONG> (Thumb, 108 bytes, Stack size 56 bytes, main.o(.text.MX_CAN_Init))
+<P><STRONG><a name="[9c]"></a>MX_CAN_Init</STRONG> (Thumb, 100 bytes, Stack size 56 bytes, main.o(.text.MX_CAN_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = MX_CAN_Init &rArr; HAL_CAN_Init &rArr; HAL_CAN_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Init
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_ConfigFilter
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -726,12 +723,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f042x6.o(RESET)
 </UL>
-<P><STRONG><a name="[a7]"></a>SystemClock_Config</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, main.o(.text.SystemClock_Config))
+<P><STRONG><a name="[a7]"></a>SystemClock_Config</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, main.o(.text.SystemClock_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SystemClock_Config &rArr; HAL_InitTick &rArr; HAL_SYSTICK_Config &rArr; SysTick_Config
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_SetSystemCoreClock
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_InitTick
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Error_Handler
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_RCC_SetUSBClockSource
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_RCC_SetSysClkSource
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_RCC_SetAPB1Prescaler
